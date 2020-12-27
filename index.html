@@ -212,8 +212,8 @@
     <section class="jumbotron text-center" style="height: auto !important;">
         <div class="container"><img class="img-fluid" src="https://i.ibb.co/89D7PJF/Prash.jpg" alt="logo"
                 style="display: flex; width:30%;height:30%;border-radius:175px; margin:auto; margin-bottom:5%;">
-            <h1 id="h11" class="jumbotron-heading">Welcome to iCoder!</h1>
-            <h1 id="h12" class="jumbotron-heading">Let's learn something new!</h1>
+            <h1 class="jumbotron-heading"><span id="typed"></span></h1>
+ 
             <p class="lead text-muted">Are you ready to see the Power of CODING?</p>
             <p><a href="blog.html" class="btn btn-danger my-2">Blogs</a>
                 <a href="about.html" class="btn btn-success my-2">About</a>
@@ -310,27 +310,21 @@
     </script>
     <script> $(document).ready(function () { $('.toast').toast('show'); });</script>
     <!--custom script -->
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js" async defer></script>
     <script>
-
-        // Initializing h1 and h2 as display=none
-        document.querySelector('#h12').style.display = 'none';
-
-        // assuming...............
-        let H1 = document.querySelector('#h11')
-        let H2 = document.querySelector('#h12')
-
-        //functions............
-        function new1() {
-            H1.style.display = 'none';
-            H2.style.display = 'block';
-        }
-        function new2() {
-            H1.style.display = 'block';
-            H2.style.display = 'none';
-        }
-        // timeouts.............
-        setInterval(new1, 3000);
-        setInterval(new2, 6000);
+        window.onload = function() {
+            console.log("loaded")
+            var typed = new Typed('#typed', {
+                strings: ["Welcome to Icoder", "Let's learn Something new!", "Web development", "Data Science", "Machine Learning", "and other awesome programming concepts available here ❤️"],
+                backSpeed: 15,
+                smartBackspace: true,
+                backDelay: 1200,
+                startDelay: 1000,
+                typeSpeed: 25,
+                loop: true,
+            });
+        };
     </script>
 </scripts>
 
