@@ -1,0 +1,21 @@
+#demo {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 6rem;
+}
+
+.fixed{
+    position: fixed;
+    color: white;
+    bottom: 0.1rem;
+}
+
+*{
+    background-color: black;
+    color: white;
+}
